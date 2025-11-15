@@ -109,7 +109,7 @@ public class MainViewController {
     void handleNew(ActionEvent event) {
         System.out.println("NEW has been pressed");
         newItem.setDisable(true);
-        openItem.setDisable(true);
+        openItem.setDisable(false);
         closeItem.setDisable(false);
     }
 
@@ -117,6 +117,7 @@ public class MainViewController {
     void handleOpen(ActionEvent event) {
         System.out.println("OPEN has been pressed");
         openItem.setDisable(true);
+        closeItem.setDisable(false);
     }
 
     @FXML
